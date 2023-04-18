@@ -1,0 +1,32 @@
+--Create a handbag store database
+
+CREATE TABLE Nikoh_Handbags (id INTEGER PRIMARY KEY, name TEXT, style TEXT, size_material TEXT, color TEXT, quantity INTEGER, price TEXT);
+
+INSERT INTO Nikoh_Handbags VALUES (1, "Shop", "Tote", "Large Canvas", "Black", 5, "100");
+INSERT INTO Nikoh_Handbags VALUES (2, "Shop", "Tote", "Medium Canvas", "Black", 5, "85");
+INSERT INTO Nikoh_Handbags VALUES (3, "Shop", "Tote", "Small Canvas", "Black", 5, "70");
+INSERT INTO Nikoh_Handbags VALUES (4, "Out", "Crossbody", "Leather", "White", 5, "300");
+INSERT INTO Nikoh_Handbags VALUES (5, "Out", "Crossbody", "Mesh", "Black", 5, "150");
+INSERT INTO Nikoh_Handbags VALUES (6, "Out", "Crossbody", "Vg Leather", "Tan", 5, "250");
+INSERT INTO Nikoh_Handbags VALUES (7, "Slay",
+"Bucket", "Large Leather", "Black", 5, "600");
+INSERT INTO Nikoh_Handbags VALUES (8, "Slay",
+"Bucket", "Medium Leather", "White", 5, "500");
+INSERT INTO Nikoh_Handbags VALUES (9, "Slay",
+"Bucket", "Small Leather", "Blue", 5, "400");
+INSERT INTO Nikoh_Handbags VALUES (10, "Club", "Clutch", "Silk", "Gold", 5, "250");
+INSERT INTO Nikoh_Handbags VALUES (11, "Club", "Clutch", "Leather", "Silver", 5, "350");
+INSERT INTO Nikoh_Handbags VALUES (12, "Club", "Clutch", "PVC", "Rose Gold", 5, "200");
+INSERT INTO Nikoh_Handbags VALUES (13, "Mission Backpack", "Hiking", "Nylon", "Black", 5, "195");
+INSERT INTO Nikoh_Handbags VALUES (14, "Mission Backpack", "Student", "Canvas",
+"Green", 5, "175");
+INSERT INTO Nikoh_Handbags VALUES (15, "Mission Backpack", "Mini", "Leather", "White", 5, "275");
+
+--Display the database
+SELECT * FROM Nikoh_Handbags;
+
+--Display the database by price
+SELECT * FROM Nikoh_Handbags ORDER BY (price)  desc;
+
+--what is the sum of all priced items?
+SELECT SUM(price) FROM Nikoh_Handbags
